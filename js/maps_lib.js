@@ -72,7 +72,15 @@ var MapsLib = {
     $(":checkbox").prop("checked", "checked");
     $("#result_box").hide();
     
+    MapsLib.currentDevice = "";
+    MapsLib.query("Device","", "Device", "Device", "MapsLib.populateDevice");
+    
     //-----custom initializers-------
+   populateDevice: function(json){
+    MapsLib.populateDropdown(json, "#Device", "Device", MapsLib.currentDevice);
+
+  },
+
     
     //-----end of custom initializers-------
 
@@ -88,6 +96,8 @@ var MapsLib = {
     var whereClause = MapsLib.locationColumn + " not equal to ''";
 
     //-----custom filters-------
+
+    MapsLib.currentDevice = $("#Device").val();
 
     //-------end of custom filters--------
 
