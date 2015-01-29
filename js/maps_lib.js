@@ -21,7 +21,7 @@ var MapsLib = {
 
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be deprecated soon
-  fusionTableId:      "AIzaSyBYlZGQgpBS4PUR6zxtvlcCYXzQimRbkkE",
+  fusionTableId:      "116pVDDp9lZLoNnhsWDJMaF_YvyDYajrvl0ICbaiD",
 
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
   //*Important* this key is for demonstration purposes. please register your own.
