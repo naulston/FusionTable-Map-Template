@@ -88,7 +88,8 @@ var MapsLib = {
     var whereClause = MapsLib.locationColumn + " not equal to ''";
 
     //-----custom filters-------
-
+    if ( $("#Device").val() != "")
+      whereClause += " AND 'type' = '" + $("#Device").val() + "'";
     //-------end of custom filters--------
 
     if (address != "" && address != "Enter an address or an intersection") {
