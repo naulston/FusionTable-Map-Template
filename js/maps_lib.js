@@ -91,11 +91,6 @@ var MapsLib = {
     if ( $("#Device").val() != "")
       whereClause += " AND 'type' = '" + $("#Device").val() + "'";
       
-    var type_column = "'Surcharge'";
-var tempWhereClause = [];
-if ( $("#cbType1").is(':checked')) tempWhereClause.push("No");
-if ( $("#cbType2").is(':checked')) tempWhereClause.push("Yes");
-whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
     //-------end of custom filters--------
 
     if (address != "" && address != "Enter an address or an intersection") {
