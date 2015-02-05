@@ -90,10 +90,9 @@ var MapsLib = {
     //-----custom filters-------
     var type_column = "'Surcharge'";
     var tempWhereClause = [];
-    if ( $("#No").is(':checked')) tempWhereClause.push("No");
     if ( $("#Yes").is(':checked')) tempWhereClause.push("Yes");
+    if ( $("#No").is(':checked')) tempWhereClause.push("No");
     whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
-      
     //-------end of custom filters--------
 
     if (address != "" && address != "Enter an address or an intersection") {
