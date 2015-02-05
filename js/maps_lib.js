@@ -88,11 +88,7 @@ var MapsLib = {
     var whereClause = MapsLib.locationColumn + " not equal to ''";
 
     //-----custom filters-------
-    var type_column = "'Surcharge'";
-    var tempWhereClause = [];
-    if ( $("#cbType1").is(':checked')) tempWhereClause.push("Yes");
-    if ( $("#cbType2").is(':checked')) tempWhereClause.push("No");
-    whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
+
       
     //-------end of custom filters--------
 
